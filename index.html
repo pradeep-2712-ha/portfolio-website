@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Domala Pradeep Sai | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Domala Pradeep Sai</h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+        <a href="pradeep.resume.pdf" class="resume-btn" download>📄 Download Resume</a>
+        <button id="darkToggle" class="dark-btn">🌗 Dark Mode</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="section">
+      <div class="container">
+        <h2>👋 About Me</h2>
+        <p>Results-driven Computer Science undergraduate with strong proficiency in Python, Java, and full-stack web devel
+opment. Experienced in object-oriented programming, data structures, and Agile methodologies. Demonstrated
+ ability to design and deploy scalable applications using React, Node.js, and MongoDB. Hands-on experience with
+ time-series forecasting and machine learning fundamentals. Adept at collaborating in cross-functional teams,
+ writing clean and maintainable code, and rapidly learning new technologies. Actively seeking software engineering
+ opportunities to contribute technical skills and problem-solving expertise in high-impact environments</p>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2>💻 Skills</h2>
+        <ul class="skills-list">
+          <li>Java</li>
+          <li>Python</li>
+          <li>HTML/CSS</li>
+          <li>JavaScript</li>
+          <li>React.js</li>
+          <li>Node.js</li>
+          <li>SQL / NoSQL</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="stats" class="section">
+      <div class="container">
+        <h2>📊 Impact & Reach</h2>
+        <div class="stats-grid">
+          <div><strong>10+</strong><p>Projects Completed</p></div>
+          <div><strong>5+</strong><p>Certifications</p></div>
+          <div><strong>2000+</strong><p>Lines of Code</p></div>
+          <div><strong>99%</strong><p>Client Satisfaction</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2>🛠 Projects</h2>
+
+        <div style="margin-bottom: 1rem;">
+          <label for="techFilter">🔍 Filter by Technology:</label>
+          <select id="techFilter">
+            <option value="all">All</option>
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+            <option value="nodejs">Node.js</option>
+            <option value="ml">Machine Learning</option>
+          </select>
+        </div>
+
+        <div class="projects-grid">
+
+          <div class="project-card featured" data-tech="python flask react nlp">
+            <h3>🏆 AI Resume Analyzer</h3>
+            <p>Built a system with NLP + Flask that reads resumes, extracts skills, and matches them to job descriptions using AI. Used React frontend + spaCy backend.</p>
+            <span class="tag">Python</span>
+            <span class="tag">Flask</span>
+            <span class="tag">React.js</span>
+            <span class="tag">NLP</span>
+          </div>
+
+          <div class="project-card" data-tech="nodejs javascript sql">
+            <h3>Blood Donation Management</h3>
+            <p>Web-based tool to manage donors, hospital requests, and blood inventory. Built with Node.js, SQL, Express.</p>
+            <span class="tag">Node.js</span>
+            <span class="tag">SQL</span>
+            <span class="tag">JavaScript</span>
+          </div>
+
+          <div class="project-card" data-tech="python ml">
+            <h3>Brain Tumor Detection</h3>
+            <p>Convolutional Neural Network model trained on MRI scans to classify tumor types with 92%+ accuracy.</p>
+            <span class="tag">Python</span>
+            <span class="tag">Machine Learning</span>
+          </div>
+
+          <div class="project-card" data-tech="javascript html css">
+            <h3>Personal Portfolio</h3>
+            <p>This very portfolio 😎 — built with HTML, CSS, and JavaScript. Fully responsive and accessible.</p>
+            <span class="tag">JavaScript</span>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications" class="section">
+      <div class="container">
+        <h2>📜 Certifications</h2>
+        <ul class="certifications-list">
+          <li><strong>JavaScript</strong> — Infosys Springboard 2025</li>
+          <li><strong>HTML5-The Language</strong> Infosys Springboard— 2025</li>
+          <li><strong>Introduction to DeepLearning</strong>AWS — 2025</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="blog" class="section">
+      <div class="container">
+        <h2>📝 Latest Blogs</h2>
+        <div class="blog-grid">
+          <div class="blog-post">
+            <h3>How I Built My Resume Analyzer</h3>
+            <p>A breakdown of NLP + cosine similarity + Flask backend used to parse resumes and rank skills.</p>
+            <a href="#">Read More</a>
+          </div>
+          <div class="blog-post">
+            <h3>Behind the CNN for Brain MRI</h3>
+            <p>How I trained a tumor detection model using Python and Keras (and got 92% accuracy!).</p>
+            <a href="#">Read More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>📬 Contact</h2>
+        <form id="contactForm">
+          <input type="email" id="email" placeholder="Your Email" required />
+          <textarea id="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Domala Pradeep Sai. Built with 💻 and 💡.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

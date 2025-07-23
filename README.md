@@ -1,0 +1,2 @@
+# portfolio-website
+BASIC FRONTEND TECHNOLOGIES
